@@ -43,21 +43,20 @@ python bookworm.py --card 11
 ## Project Structure
 
 ```
-bookworm/
-├── bookworm.py          # CLI entry point
-├── src/
-│   ├── fetcher.py       # Download & cache Gutenberg books
-│   ├── cleaner.py       # Strip headers/footers, tokenize
-│   ├── cache.py         # Result caching on disk
-│   ├── lexdiv.py        # Lexical diversity metrics
-│   ├── topics.py        # Topic modeling (LDA/LSA)
-│   ├── entities.py      # Named Entity Recognition
-│   ├── summarizer.py    # Extractive summarization
-│   ├── similarity.py    # TF-IDF + cosine similarity
-│   └── card.py          # Book card aggregation
-├── cache/               # Cached books & results (gitignored)
-├── requirements.txt
-└── README.md
+bookworm.py          # CLI entry point
+src/
+├── fetcher.py       # Download & cache Gutenberg books
+├── cleaner.py       # Strip headers/footers, tokenize
+├── cache.py         # Result caching on disk
+├── lexdiv.py        # Lexical diversity metrics
+├── topics.py        # Topic modeling (LDA/LSA)
+├── entities.py      # Named Entity Recognition
+├── summarizer.py    # Extractive summarization
+├── similarity.py    # TF-IDF + cosine similarity
+└── card.py          # Book card aggregation
+cache/               # Cached books & results (gitignored)
+requirements.txt
+README.md
 ```
 
 ## Book Collection
